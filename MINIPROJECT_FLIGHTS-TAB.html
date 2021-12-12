@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOK FLIGHTS</title>
+<meta name="viewport" content="width=device-width">
+<style>
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("BG_IMAGE_MP.jpg");
+  padding:0;
+  top: 0px;
+  height: 100%; 
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.overbgimage4{
+ position: absolute;
+ top: 100px;
+ left: 0px;
+ opacity: 0.3;
+ height: 40px;
+ width: 100%;
+}
+</style>
+<style>
+
+.menu-bar
+{
+  background: rgb(0,0,0);
+  text-align: center ;
+  opacity:0.3;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #ffff;
+}
+.menu-bar ul li
+{
+  width: 120px;
+  margin:10px;
+  padding: 10px;
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color:#fff;
+}
+.active, .menu-bar ul li :hover
+{
+  background: #32174d;
+  border-radius: 12px;
+}
+.Company_name{
+ text-decoration: none;
+ color:#000; 
+ padding : 0px;
+ margin : 0 px;
+ position: absolute;
+ top: 12px;
+ left: 45px;
+        
+}
+.Booking_form
+{
+position:center;
+   top:100px;
+   background: rgb(255,255,255);
+   opacity:0.8;
+   padding: 150px;
+   margin:0px;
+}
+</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="Company_name">
+		<font face="verdana" weight="bold">
+		<h2>AP TOURS N TRAVELS</h2>
+		</font>
+		</div>
+			<div class="menu-bar">
+			<font size="4">
+			<ul>
+			<li><a href="file:///D:/HTML%20codes/HTML%20PROJECT/HTML_MINIPROJECT_08.html">Home</a></li>
+			<li class = "active"><a href="file:///D:/HTML%20codes/HTML%20PROJECT/MINIPROJECT_FLIGHTS-TAB.html">Flights</a></li>
+			<li><a href="file:///D:/HTML%20codes/HTML%20PROJECT/MINIPROJECT_ABOUT-US-TAB.html">About Us</a></li>
+			</ul>
+			</font>
+			</div>
+		
+		<div class="main_flight">
+		<div class="Booking_form">
+		<div class="Flight_heading">
+		<font face="verdana" weight="bold">
+		<center><h2>Book Domestic & International Flights</h2><center>
+		</font>
+		</div>
+		<center><form id="register" method="post">
+		<label1> First Name : </label1>
+		<input type="text" name="fname" id="name" placeholder="Enter your First Name">
+		<br><br>
+		<label> Last Name : </label>
+		<input type="text" name="lname" id="name" placeholder="Enter your Last Name">
+		<br><br>
+		<label> Mobile Number : </label>
+		<input type="text" name="phnumber" id="ph_no" placeholder="Enter your Mobile number">
+		<br><br>
+		<label> Email: </label>
+		<input type="text" name="email" id="email_id" placeholder="Enter your E-Mail">
+		<br><br>
+		<label> Armed Forces : </label>
+		<input type="radio" name="radiobutton1" id="af_radio">
+		<label> Student : </label>
+		<input type="radio" name="radiobutton2" id="stu_radio">
+		<label> Senior Citizen : </label>
+		<input type="radio" name="radiobutton3" id="sc_radio">
+		<label> None : </label>
+		<input type="radio" name="radiobutton4" id="n_radio">
+		<br><br>
+		<label for="cars">Choose a Your flight path:</label>
+		<select name="----FLIGHTS----" id="cars">
+ 		 <option value="volvo">Dehli to Mumbai</option>
+  		<option value="saab">Dehli to Banglore</option>
+  		<option value="mercedes">Banglore to Mumbai</option>
+  		<option value="audi">Banglore to Dehli</option>
+		<option value="audi">Hyderabad to Dehli</option>
+		<option value="audi">Banglore to Hyderabad</option>
+		<option value="audi">Pune to Dehli</option>
+		</select>
+		<br><br>
+		<button type="button" onclick="alert('Your Flight is Booked')">Book Flight</button>
+		</form>
+		</center>
+		</div>
+		</center>
+		</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
